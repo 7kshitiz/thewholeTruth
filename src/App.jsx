@@ -4,10 +4,10 @@ import Footer from './components/footer/footer'
 import MainRoutes from './routes/MainRoutes'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import styles from './app.module.css'
+
 const App = () => {
   return (
-    <div className={styles.container}>
+    <div >
       <Header />
       <MainRoutes />
       <Footer />
