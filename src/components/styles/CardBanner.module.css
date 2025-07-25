@@ -1,0 +1,27 @@
+
+
+.cardBanner{
+    width: 100%;
+    padding: 10%;
+}
+
+.mainImg{
+    width: 100%;
+    position: relative;   
+}
+
+.mainImg .newLaunch{
+    width: 20%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.mainImg .newLaunch img{
+    width: 100%;
+    object-fit: cover;
+}
+.mainImg img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}

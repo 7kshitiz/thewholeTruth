@@ -1,0 +1,157 @@
+.navbar {
+    position: relative;
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid #eee;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+}
+
+.logo img {
+    width: 5rem;
+}
+
+.navCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem 0;
+}
+
+.menuItem {
+    position: relative;
+}
+
+.menuLink {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    transition: color 0.3s;
+}
+
+.menuLink:hover {
+    color: #ff6b6b;
+}
+
+.dropdown {
+    position: absolute;
+    top: 150%;
+    left: 500%;
+    transform: translateX(-50%);
+    width: 100vw;
+    max-width: 1000px;
+    background: #fff;
+    z-index: 1000;
+    padding: 1.5rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: cursive;
+}
+
+.dropdownGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    justify-content: center;
+    gap: 1rem;
+    user-select: none;
+}
+
+.dropdownItem {
+    background: #fff;
+    border-radius: 8px;
+    padding: 0.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.29);
+    transition: transform 0.2s ease;
+    text-decoration: none;
+    font-weight: 600;
+    color: #333;
+}
+
+.dropdownItem:hover {
+    transform: translateY(-2px);
+}
+
+.dropdownItem img {
+    width: 60px;
+    object-fit: contain;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.icons button {
+    background-color: transparent;
+    border: none;
+}
+
+.icons button i {
+    font-size: 1.4rem;
+}
+
+/* 🌟 Responsive styles */
+
+@media (max-width: 1024px) {
+    .navCenter {
+        gap: 1rem;
+    }
+
+    .dropdown {
+        width: 95vw;
+        left: 300%;
+    }
+}
+
+@media (max-width: 768px) {
+    .navCenter {
+        display: none;
+        /* Hide full menu on tablet & smaller */
+    }
+
+    .logo {
+        order: 1;
+    }
+
+    .icons {
+        order: 2;
+        gap: 0.75rem;
+    }
+
+    .logo img {
+        width: 4rem;
+    }
+
+    .dropdownGrid {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+
+    .dropdownItem img {
+        width: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .dropdown {
+        width: 100vw;
+        padding: 1rem;
+    }
+
+    .dropdownGrid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .icons button i {
+        font-size: 1.2rem;
+    }
+}

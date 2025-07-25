@@ -1,0 +1,119 @@
+.footer {
+    background-color: #000;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    padding: 2rem 1rem;
+}
+
+.topBanner {
+    background-color: #111;
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.logoSection {
+    flex: 1 1 300px;
+    max-width: 400px;
+}
+
+.logo {
+    width: 80px;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+}
+
+.newsletter {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.newsletter input {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    width: 70%;
+}
+
+.newsletter button {
+    padding: 0.5rem 1rem;
+    background-color: #b5f269;
+    border: none;
+    color: black;
+    border-radius: 0 5px 5px 0;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.linksSection {
+    display: flex;
+    flex: 2 1 500px;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.linksSection h4 {
+    margin-bottom: 0.5rem;
+}
+
+.linksSection ul {
+    list-style: none;
+    padding: 0;
+}
+
+.linksSection li {
+    margin: 0.3rem 0;
+    font-size: 0.95rem;
+    cursor: pointer;
+}
+
+.bottom {
+    text-align: center;
+    margin-top: 2rem;
+    border-top: 1px solid #333;
+    padding-top: 1rem;
+}
+
+.socials {
+    margin-bottom: 1rem;
+}
+
+.socials i {
+    margin: 0 0.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .linksSection {
+        flex-direction: column;
+    }
+
+    .newsletter {
+        flex-direction: column;
+    }
+
+    .newsletter input,
+    .newsletter button {
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 0.5rem;
+    }
+
+    .socials i {
+        font-size: 1.5rem;
+    }
+}

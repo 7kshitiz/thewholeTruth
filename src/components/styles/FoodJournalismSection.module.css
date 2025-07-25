@@ -1,0 +1,90 @@
+@font-face {
+    font-family: f1;
+    src: url('../../../public/fonts/f1.woff2');
+}
+
+.section {
+    padding: 3rem 1rem;
+    text-align: center;
+    color: black;
+    font-family: f1;
+}
+
+
+.upper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.upper .left{
+    width: 50%;
+    text-align: center;
+}
+.upper .right{
+    width: 50%;
+    
+}
+
+.upper .right img{
+    width: 100%;
+    object-fit: cover;
+}
+.heading {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.heading span {
+    color: #796b6b;
+    /* optional: keep or customize */
+}
+
+.imageWrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+
+
+.description {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+    color: #333;
+}
+
+.journal_card_wrapper{
+    display: flex;
+    gap: 1rem;
+    margin-left: 10rem;
+}
+
+@media (max-width: 768px) {
+.journal_card_wrapper {
+        margin-left: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    
+    .upper{
+        flex-direction: column;
+    }
+    .heading{
+        font-size: 2rem;
+        width: 100%;
+    }
+    .description{
+        font-size: .5rem;
+    }
+    .journal_card_wrapper{
+        margin-left:1rem;
+    }
+
+}

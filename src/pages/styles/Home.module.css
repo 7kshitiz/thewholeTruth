@@ -1,0 +1,118 @@
+@font-face {
+    font-family: Myfont1;
+    src: url(../../../public/fonts/f1.woff2);
+}
+
+@font-face {
+    font-family: Myfont2;
+    src: url(../../../public/fonts/f2.woff2);
+}
+.main{
+    height: 100%;
+}
+.hero {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+    gap: 2rem;
+    min-height: 70vh;
+    background-color: #fffaf0;
+}
+
+.textContainer {
+    max-width: 600px;
+    flex: 1 1 300px;
+    text-align: center;
+}
+
+.heading {
+    font-size: 2.2rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    font-family: Myfont2;
+    justify-content: center;
+}
+
+.word {
+    display: inline-block;
+}
+
+.subheading {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+    font-family: Myfont1;
+}
+
+.button {
+    padding: 0.75rem 1.5rem;
+    background-color: transparent;
+    color: #93385d;
+    border: 2px solid #93385d;
+    border-radius: 999px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.imageContainer {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    flex: 1 1 200px;
+}
+
+.productImage {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Tablet and up */
+@media (min-width: 768px) {
+    .hero {
+        flex-wrap: nowrap;
+        padding: 3rem;
+    }
+
+    .textContainer {
+        max-width: 50%;
+        text-align: left;
+    }
+
+    .heading {
+        font-size: 3rem;
+        justify-content: flex-start;
+    }
+
+    .subheading {
+        font-size: 1.2rem;
+    }
+
+    .imageContainer {
+        width: 350px;
+        height: 350px;
+    }
+}
+
+/* Desktop and up */
+@media (min-width: 1024px) {
+    .heading {
+        font-size: 3.5rem;
+    }
+
+    .subheading {
+        font-size: 1.25rem;
+    }
+
+    .imageContainer {
+        width: 400px;
+        height: 400px;
+    }
+}

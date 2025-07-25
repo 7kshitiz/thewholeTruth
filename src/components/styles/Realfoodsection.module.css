@@ -1,0 +1,91 @@
+
+@font-face {
+    font-family: f2;
+    src: url('../../../public/fonts/f1.woff2');
+}
+.section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.left {
+    width: 30%;
+    min-width: 250px;
+ 
+    display: flex;
+    
+    justify-content: center;
+    flex-direction: column;
+    font-family: f2;
+}
+
+.left h2 {
+    font-size: 5rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.left h2 span {
+    display: inline-block;
+    color: #333;
+}
+
+.left p {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.left u {
+    text-decoration-color: #93385d;
+    text-underline-offset: 4px;
+}
+
+.right {
+    width: 70%;
+    min-width: 300px;
+}
+
+:global(.slick-slide > div) {
+    padding: 0 8px;
+}
+
+:global(.slick-list) {
+    margin: 0 -8px;
+}
+.custom-swiper {
+    position: relative;
+    padding: 0 40px;
+    /* space for arrows */
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left h2 {
+        font-size: 3.5rem;
+    }
+
+    .right {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .left h2 {
+        font-size: 3rem;
+    }
+
+    .left p {
+        font-size: 0.95rem;
+    }
+}

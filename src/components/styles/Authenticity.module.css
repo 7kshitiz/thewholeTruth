@@ -1,0 +1,59 @@
+
+@font-face {
+    font-family: f1;
+    src: url('../../../public/fonts/f1.woff2');
+}
+
+
+.section {
+    padding: 3rem 1rem;
+    font-family: f1;
+    text-align: center;
+}
+
+.textContent h2 {
+    font-size: 5rem;
+    font-weight: bold;
+
+}
+
+.highlight {
+    color: #e91e63;
+    text-decoration: underline;
+}
+
+.textContent p {
+    margin-top: 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+}
+
+.proofItems {
+    display: flex;
+    padding: 5rem;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.proofItem {
+    flex: 1 1 200px;
+    max-width: 250px;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: left;
+}
+
+.video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+.video:hover {
+    transform: translateY(-5px);
+}
+
